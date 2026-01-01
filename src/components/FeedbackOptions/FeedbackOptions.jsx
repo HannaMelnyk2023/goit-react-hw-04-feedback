@@ -1,9 +1,8 @@
-import React from "react";
+// import React from "react";
 import css from "./FeedbackOptions.module.css";
 
-export default class FeedbackOptions extends React.Component{
-    render() {
-        const { options, onLeaveFeedback } = this.props;
+export default function FeedbackOptions({ options, onLeaveFeedback }) {
+  
         return (
             <div className={css.buttons}>
                 {options.map((option) => (
@@ -17,4 +16,4 @@ export default class FeedbackOptions extends React.Component{
             </div>
         );
     }
-}    
+   
