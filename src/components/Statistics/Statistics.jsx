@@ -1,9 +1,7 @@
-import React from 'react';
 
-export default class Statistics extends React.Component {
-  render() {
-      const { good, neutral, bad, total,
-          positivePercentage } = this.props;
+export default function Statistics ({ good, neutral, bad, total,
+          positivePercentage }) {
+
       return (
           <>
               <p>Good: {good}</p>
@@ -13,4 +11,4 @@ export default class Statistics extends React.Component {
               <p>Positive feedback: {positivePercentage}%</p>
       </>)     
   }
-}
+
